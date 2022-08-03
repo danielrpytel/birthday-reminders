@@ -32,7 +32,7 @@ function FriendCard() {
     return(
         <div className="flex flex-col w-full lg:w-3/5 md:rounded-lg mx-auto bg-gradient-to-tr from-purple-800 to-blue-800">
             <HeaderTitle title="Friend's Birthday Info" />       
-            <div className="w-full md:w-4/5 drop-shadow-md bg-blue-800 mx-auto mb-10"> 
+            <div className="w-full md:w-4/5 drop-shadow-md bg-blue-800 mx-auto mb-5"> 
                 <div className="flex flex-col xl:flex-row w-full">
 
                     {/* 
@@ -40,7 +40,7 @@ function FriendCard() {
                         If the image is not found then removes error displays img placeholder
                     */}
                     <div className="my-7">
-                        <img className="rounded-lg object-cover mx-auto h-80 w-64 xl:ml-10 border border-black" src={friend.imgSrc} alt="Person" 
+                        <img className="rounded-lg object-cover mx-auto h-80 w-72 xl:ml-10 border border-black" src={friend.imgSrc} alt="Person" 
                         onError={(e) => {e.target.onError = null; e.target.src=placeHolderSrc}}/>
                     </div>
 

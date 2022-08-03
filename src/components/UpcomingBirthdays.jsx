@@ -6,7 +6,7 @@ function UpcomingBirthdays( friends ) {
     const upcomingBirthdaysData = friends.friendsData;
 
     return(
-        <div className="flex flex-col w-full h-4/5 lg:w-3/5 md:rounded-lg mx-auto bg-gradient-to-tr from-purple-800 to-blue-800">
+        <div className="flex flex-col w-full h-[720px] lg:w-3/5 md:rounded-lg mx-auto bg-gradient-to-tr from-purple-800 to-blue-800">
 
             <HeaderTitle title={"Upcoming Birthdays"} />
 
