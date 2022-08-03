@@ -1,37 +1,5 @@
-import moment from "moment";
 import JSONData from "../data/friends.json";
-
-function getTurningYearsOld( date ) {
-
-    if ( date.lenght === 0 ) {
-        return
-    }
-
-    const currentDate = moment();
-    const bDay = moment(date);
-
-    var yearDifference = currentDate.diff(bDay, 'years')
-    yearDifference += 1;
-
-    return Math.abs(yearDifference);
-}
-
-function getDaysToBday( date ) {
-
-    if ( date.lenght === 0 ) {
-     return   
-    }
-
-    const currentDate = moment();
-    const bDay = moment(date);
-    const yearDifference = getTurningYearsOld(date);
-
-    bDay.add(yearDifference, 'years');
-
-    const dayDifference = currentDate.diff(bDay, 'days');
-
-    return Math.abs(dayDifference);
-}
+import { getTurningYearsOld, getDaysToBday, getImgSrc } from "./GetAdditionalInfo";
 
 function GetFriendsData() {
     
@@ -45,7 +13,8 @@ function GetFriendsData() {
             favDrinks: friend.favDrinks,
             favActivity: friend.favActivity,
             daysToBday: getDaysToBday(friend.dateOfBirth),
-            turningYearsOld: getTurningYearsOld(friend.dateOfBirth)
+            turningYearsOld: getTurningYearsOld(friend.dateOfBirth),
+            imgSrc: getImgSrc(friend.fName, friend.lName)
         }
 
         return (friendData);

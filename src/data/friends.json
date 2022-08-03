@@ -109,8 +109,8 @@
             "fName": "Maggie",
             "lName": "Ludzia",
             "dateOfBirth": "June 26 2000",
-            "favDrinks": ["Pepsi, jack / coke"],
-            "favActivity": ["Concerts / Festivals"]
+            "favDrinks": ["Pepsi", "Jack and coke"],
+            "favActivity": ["Concerts", "Festivals"]
         },
         {
             "id": 14,

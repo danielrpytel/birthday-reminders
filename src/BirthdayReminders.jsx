@@ -1,5 +1,8 @@
+import { Routes, Route } from "react-router-dom";
+
 import UpcomingBirthdays from "./components/UpcomingBirthdays";
 import GetFriendsData from "./hooks/GetFriendsData";
+import FriendCard from "./components/FriendCard";
 
 function BirthdayReminders() {
 
@@ -12,7 +15,10 @@ function BirthdayReminders() {
                 Birthdays Reminder
             </h1>
         </div> 
-      <UpcomingBirthdays friendsData={friendsData} />
+        <Routes>
+          <Route path="/" element={ <UpcomingBirthdays friendsData={friendsData}/> }/>
+          <Route path="/friend-info/:id" element={ <FriendCard /> }/>
+        </Routes>
     </div>
     );
 }

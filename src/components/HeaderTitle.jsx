@@ -1,10 +1,10 @@
 
-function HeaderTitle( { headerTitle } ) {
+function HeaderTitle( { title } ) {
 
     return(
-        <div className="w-full">
+        <div className="mx-auto">
             <h2 className="text-center py-5 font-bold text-xl text-white">
-                {headerTitle}
+                {title}
             </h2>
         </div>
     );
