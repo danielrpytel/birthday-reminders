@@ -8,12 +8,17 @@ function BirthdayRow( {firstName, lastName, dateOfBirth, daysToBday, turningYear
         
         <div className="flex w-full h-28 md:w-3/5 md:rounded-md bg-blue-800 m-auto mb-2 drop-shadow-md">
             <Link className="flex" to={`/friend-info/${id}`} >
-            <div className="relative my-auto ml-1 lg:ml-5 min-w-fit">
 
+            {/* 
+                Image block. Getting src path from friend object (/hooks/GetAdditionalInfo getImgSrc())
+                If the image is not found then removes error displays img placeholder
+            */}
+            <div className="relative my-auto ml-1 lg:ml-5 min-w-fit">
                 <img className="rounded-lg object-cover h-20 w-20 border border-black" src={imgSrc} alt="Person"
                 onError={(e) => {e.target.onError = null; e.target.src=placeHolderSrc}}/>
-
             </div>
+
+            {/* Full name and date of birth block. flex col */}
             <div className="w-2/5 my-auto pl-2 lg:pl-10 mr-auto">
                 <div className="my-2 text-white text-sm">
                     {firstName} {lastName}
@@ -22,11 +27,14 @@ function BirthdayRow( {firstName, lastName, dateOfBirth, daysToBday, turningYear
                     {dateOfBirth}
                 </div>
             </div>
+
+            {/* days to bday string block */}
             <div className="w-2/5 m-auto px-3">
                 <div className="text-white text-base">
                     Turning {turningYearsOld} in {daysToBday} days
                 </div>
             </div>
+
             </Link>
         </div>
    

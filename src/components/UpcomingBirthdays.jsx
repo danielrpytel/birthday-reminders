@@ -12,18 +12,19 @@ function UpcomingBirthdays( friends ) {
 
             <div className="flex-1 max-h-full overflow-auto mb-5">
 
-                {upcomingBirthdaysData.map((friend) => (
-                        <BirthdayRow
-                            key={friend.id}
-                            id={friend.id}
-                            firstName={friend.fName}
-                            lastName={friend.lName}
-                            dateOfBirth={friend.dateOfBirth}
-                            daysToBday={friend.daysToBday}
-                            turningYearsOld={friend.turningYearsOld}
-                            imgSrc={friend.imgSrc}
-                        />
-                ))}
+            {/* Display all upcoming birthdays in BirthdayRow component */}
+            {upcomingBirthdaysData.map((friend) => (
+                <BirthdayRow
+                    key={friend.id}
+                    id={friend.id}
+                    firstName={friend.fName}
+                    lastName={friend.lName}
+                    dateOfBirth={friend.dateOfBirth}
+                    daysToBday={friend.daysToBday}
+                    turningYearsOld={friend.turningYearsOld}
+                    imgSrc={friend.imgSrc}
+                />
+            ))}
 
             </div>
         </div>

@@ -3,8 +3,10 @@ import { getTurningYearsOld, getDaysToBday, getImgSrc } from "./GetAdditionalInf
 
 function GetFriendsData() {
     
+    // Map all friends from json file, days to birthday not sorted and might have empty values
     const unsortedList = JSONData.friends.map( (friend) => {
 
+        // New object with additional information (functions in ./GetAdditionalInfo file)
         const friendData = {
             id: friend.id,
             fName: friend.fName,
@@ -20,10 +22,12 @@ function GetFriendsData() {
         return (friendData);
     })
 
+    // Removes objects with empty date of birth
     const noEmptydateOfBirthProp = unsortedList.filter( (friend) => {
         return friend.dateOfBirth !== "";
     })
 
+    // Sorting objects in ascending order of days to birthday value
     const sortedList = noEmptydateOfBirthProp.sort((a, b) => a.daysToBday - b.daysToBday)
 
     return sortedList;
