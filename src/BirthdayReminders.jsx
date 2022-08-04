@@ -9,7 +9,7 @@ function BirthdayReminders() {
   const friendsData = GetFriendsData();
 
   return (
-    <div className="pb-10">
+    <div className="pb-10 bg-gray-900 font-mono">
           <div className="py-10">
             <h1 className="text-center font-bold text-3xl text-white">
                 Birthdays Reminder

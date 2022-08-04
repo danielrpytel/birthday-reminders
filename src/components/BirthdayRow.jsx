@@ -6,7 +6,7 @@ function BirthdayRow( {firstName, lastName, dateOfBirth, daysToBday, turningYear
 
     return(
         
-        <div className="flex w-full h-28 md:w-3/5 md:rounded-md bg-blue-800 m-auto mb-2 drop-shadow-md">
+        <div className="flex w-full h-32 md:w-3/5 md:rounded-md bg-blue-800 m-auto mb-2 drop-shadow-md">
             <Link className="flex w-full" to={`/friend-info/${id}`} >
 
             {/* 
@@ -14,7 +14,7 @@ function BirthdayRow( {firstName, lastName, dateOfBirth, daysToBday, turningYear
                 If the image is not found then removes error displays img placeholder
             */}
             <div className="relative my-auto ml-1 lg:ml-5 min-w-fit">
-                <img className="rounded-lg object-cover h-20 w-20 border border-black" src={imgSrc} alt="Person"
+                <img className="rounded-lg object-cover h-24 w-24 border border-black" src={imgSrc} alt="Person"
                 onError={(e) => {e.target.onError = null; e.target.src=placeHolderSrc}}/>
             </div>
 
