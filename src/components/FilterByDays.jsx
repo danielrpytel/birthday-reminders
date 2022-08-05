@@ -2,11 +2,14 @@
 function FilterByDays({filterDaysOptions, onOptionChange, current}) {
 
     return(
-    <div className="flex row mx-auto mb-5">
+    <div className="flex row m-auto mb-5">
         <p className="text-md text-white pr-4">
             Filter by
         </p>
-        <select value={current}
+
+        <select 
+        className="flex"
+        value={current}
         onChange={(e) => {onOptionChange(e.target.value)}}
         >
             {filterDaysOptions.map((option) => (
@@ -19,3 +22,6 @@ function FilterByDays({filterDaysOptions, onOptionChange, current}) {
 )}
 
 export default FilterByDays;
+/*
+
+        */

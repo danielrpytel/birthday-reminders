@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function BirthdayRow( {firstName, lastName, dateOfBirth, daysToBday, turningYearsOld, id, imgSrc} ) {
 
-    const placeHolderSrc = "people-img/img-placeholder.png";
+    const placeHolderSrc = "/people-img/img-placeholder.png";
 
     return(
         
