@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
 import UpcomingBirthdays from "./components/UpcomingBirthdays";
-import GetFriendsData from "./hooks/GetFriendsData";
 import FriendCard from "./components/FriendCard";
 import AllBirthdaysList from "./components/AllBirthdaysList";
 
@@ -9,8 +8,6 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 
 function BirthdayReminders() {
-
-  const friendsData = GetFriendsData();
 
   return (
     <div className="bg-gray-900 font-mono h-screen">
@@ -21,9 +18,9 @@ function BirthdayReminders() {
         </div> 
         <Nav />
         <Routes>
-          <Route path="/" element={ <UpcomingBirthdays friendsData={friendsData}/> }/>
+          <Route path="/" element={ <UpcomingBirthdays /> }/>
           <Route path="/friend-info/:id" element={ <FriendCard /> }/>
-          <Route path="/all-birthdays" element={ <AllBirthdaysList friendsData={friendsData}/> } />
+          <Route path="/all-birthdays" element={ <AllBirthdaysList /> } />
         </Routes>
         <Footer />
     </div>

@@ -1,19 +1,19 @@
 import { useState } from "react";
 
+import GetFriendsData from "../hooks/GetFriendsData";
 import BirthdayRow from "./BirthdayRow";
 import HeaderTitle from "./HeaderTitle";
 import FilterByDays from "./FilterByDays";
 
-function UpcomingBirthdays( friends ) {
+function UpcomingBirthdays() {
 
     const [filterDaysToBirthday, setFilterDays ] = useState(60);
     const filterDaysToBirthdayOptions = [30, 45, 60, 90, 120];
-  
+ 
     // Filter data to show by how many days to birthday
-    const birthdaysData = friends.friendsData;
+    const birthdaysData = GetFriendsData();
     const upcomingBirthdaysData = birthdaysData.filter((friend) => {return friend.daysToBday <= filterDaysToBirthday})
     
-
     // If there are not upcoming birthdays return message with select filter
     if (upcomingBirthdaysData.length === 0) {
         return (

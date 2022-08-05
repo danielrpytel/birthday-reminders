@@ -1,9 +1,10 @@
+import GetFriendsData from "../hooks/GetFriendsData";
 import HeaderTitle from "./HeaderTitle";
 import BirthdayRow from "./BirthdayRow";
 
-function AllBirthdays( friends ) {
+function AllBirthdays() {
 
-    const allBirthdaysData = friends.friendsData;
+    const allBirthdaysData = GetFriendsData();
 
     return(
         <div className="flex flex-col w-full h-[700px] lg:w-3/5 md:rounded-lg mx-auto bg-gradient-to-tr from-purple-800 to-blue-800">
