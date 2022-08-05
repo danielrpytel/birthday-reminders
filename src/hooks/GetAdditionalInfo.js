@@ -1,5 +1,9 @@
 import moment from "moment";
 
+
+const momentFormat = "MMMM D YYYY";
+
+
 // Get turning years old from DOB date
 export function getTurningYearsOld( date ) {
 
@@ -8,7 +12,7 @@ export function getTurningYearsOld( date ) {
     }
 
     const currentDate = moment();
-    const bDay = moment(date);
+    const bDay = moment(date, momentFormat);
 
     //Getting difference and adding 1 year for turning years old
     var yearDifference = currentDate.diff(bDay, 'years')
@@ -26,7 +30,7 @@ export function getDaysToBday( date ) {
     }
 
     const currentDate = moment();
-    const bDay = moment(date);
+    const bDay = moment(date, momentFormat);
     const yearDifference = getTurningYearsOld(date);
 
     // Adding turning years old to have only days to next birthday
