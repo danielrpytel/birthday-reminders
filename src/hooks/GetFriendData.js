@@ -8,6 +8,10 @@ function GetFriendData( { URLparams } ) {
 
     // friend data from json file matching params id
     const friend = JSONData.friends.find((friend) => { return friend.id === params });
+    
+    if(friend === undefined) {
+        return;
+    }
 
     // New object with additional information (functions in ./GetAdditionalInfo file)
     const friendData = {

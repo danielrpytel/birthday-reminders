@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import UpcomingBirthdays from "./components/UpcomingBirthdays";
 import FriendCard from "./components/FriendCard";
 import AllBirthdaysList from "./components/AllBirthdaysList";
+import NotFound from "./components/NotFound";
 
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
@@ -15,13 +16,14 @@ function BirthdayReminders() {
             <h1 className="text-center font-bold text-3xl text-white">
                 Birthdays Reminder
             </h1>
-        </div> 
+        </div>  
         <Nav />
-        <Routes>
-          <Route path="/" element={ <UpcomingBirthdays /> }/>
-          <Route path="/friend-info/:id" element={ <FriendCard /> }/>
-          <Route path="/all-birthdays" element={ <AllBirthdaysList /> } />
-        </Routes>
+          <Routes>
+            <Route path="*" element={<NotFound />} />
+            <Route path="/" element={ <UpcomingBirthdays /> }/>
+            <Route path="/friend-info/:id" element={ <FriendCard /> }/>
+            <Route path="/all-birthdays" element={ <AllBirthdaysList /> } />
+          </Routes> 
         <Footer />
     </div>
     );

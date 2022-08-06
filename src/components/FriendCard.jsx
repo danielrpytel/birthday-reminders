@@ -15,6 +15,22 @@ function FriendCard() {
     let favActivity = "";
     let favDrink = "";
     
+    // if cannot find a friend
+    if( friend === undefined ) {  
+        return(
+            <div className="flex flex-col w-full lg:w-3/5 md:rounded-lg mx-auto bg-gradient-to-tr from-purple-800 to-blue-800">
+                <HeaderTitle title="Friend's Birthday Info" />       
+                <div className="w-full h-[500px] md:w-4/5 mx-auto mt-9 text-center">
+                    <h1 
+                    aria-label="not found"
+                    className="text-2xl text-white">
+                        Friend not found
+                        </h1>
+                </div>
+            </div>
+        )
+    }
+
     // Join multiple values if exists to favActivity string.
     if(friend.favActivity.length > 1) {
         favActivity = friend.favActivity.join(", ") + ".";

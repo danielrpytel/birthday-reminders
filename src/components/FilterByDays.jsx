@@ -8,7 +8,7 @@ function FilterByDays({filterDaysOptions, onOptionChange, current}) {
         </p>
 
         <select 
-        className="flex"
+        aria-label="select by days"
         value={current}
         onChange={(e) => {onOptionChange(e.target.value)}}
         >
@@ -22,6 +22,3 @@ function FilterByDays({filterDaysOptions, onOptionChange, current}) {
 )}
 
 export default FilterByDays;
-/*
-
-        */
