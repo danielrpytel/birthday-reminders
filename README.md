@@ -12,12 +12,12 @@ All images must be in following format: Firstname-Lastname.jpg ex. **Daniel-Pyte
 friends.json object structure:
 
 Friend
-    id:             int
-    fName:          string
-    lName:          string
-    dateOfBirth:    string
-    favDrinks:      [ string ]
-    favActivity:    [ string ]
+    -id: int
+    -fName: string
+    -lName: string
+    -dateOfBirth: string
+    -favDrinks: [ string ]
+    -favActivity: [ string ]
 
 dateOfBirth must be in moment format "MMMM D YYYY" ex. **"April 2 1998"** (calculating days left to birthday and years old).
 
@@ -25,15 +25,15 @@ Friend object structure for components:
 (All additional data from functions in ./src/hooks/GetAdditionalInfo)
 
 Friend
-    id:                 int
-    fName:              string
-    lName:              string
-    dateOfBirth:        string
-    favDrinks:          [ string ]
-    favActivity:        [ string ]
-    daysToBday:         int
-    turningYearsOld:    int
-    imgSrc:             string
+    -id: int
+    -fName: string
+    -lName: string
+    -dateOfBirth: string
+    -favDrinks: [ string ]
+    -favActivity: [ string ]
+    -daysToBday: int
+    -turningYearsOld: int
+    -imgSrc: string
 
     getTurningYearsOld( date )
     getDaysToBday( date )
