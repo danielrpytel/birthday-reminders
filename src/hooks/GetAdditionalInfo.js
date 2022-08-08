@@ -49,7 +49,7 @@ export function getImgSrc( fName, lName ) {
     const imgName = `${fName}-${lName}`;
     const fileType = ".jpg";
 
-    const imgSrc = `${directory}${imgName}${fileType}`;
+    const imgSrc = process.env.PUBLIC_URL + `${directory}${imgName}${fileType}`;
 
     return imgSrc;
 }

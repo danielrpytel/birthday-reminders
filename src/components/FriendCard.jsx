@@ -10,7 +10,7 @@ function FriendCard() {
     // friend data matching params from json
     const friend = GetFriendData( URLparams={URLparams});
 
-    const placeHolderSrc = "/people-img/img-placeholder.png";
+    const placeHolderSrc = process.env.PUBLIC_URL + "/people-img/img-placeholder.png";
  
     let favActivity = "";
     let favDrink = "";

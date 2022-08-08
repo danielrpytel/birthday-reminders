@@ -8,7 +8,7 @@ function Footer() {
                     Designed and Developed by Daniel Pytel
                 </div>
                 <div className="mx-auto">
-                    Documentation and source on: <a className="hover:text-blue-500" href="https://github.com/danielrpytel/birthday-reminders">GitHub</a>
+                    Documentation and code on: <a className="hover:text-blue-500" href="https://github.com/danielrpytel/birthday-reminders">GitHub</a>
                 </div>
             </div>
         </div>        
