@@ -20,7 +20,7 @@ function BirthdayReminders() {
         <Nav />
           <Routes>
             <Route path="*" element={<NotFound />} />
-            <Route path="/" element={ <UpcomingBirthdays /> }/>
+            <Route path="/birthday-reminders" element={ <UpcomingBirthdays /> }/>
             <Route path="/friend-info/:id" element={ <FriendCard /> }/>
             <Route path="/all-birthdays" element={ <AllBirthdaysList /> } />
           </Routes> 
