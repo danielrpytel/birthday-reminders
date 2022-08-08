@@ -10,7 +10,7 @@ Friend's data is stored in ./src/data/friends.json and images of friends are in 
 All images must be in following format: Firstname-Lastname.jpg ex. **Daniel-Pytel.jpg**. If the image is not found its replaced with img-placeholder.png.
 
 friends.json object structure:
-
+```
 Friend
     -id: int
     -fName: string
@@ -18,12 +18,13 @@ Friend
     -dateOfBirth: string
     -favDrinks: [ string ]
     -favActivity: [ string ]
-
+```
 dateOfBirth must be in moment format "MMMM D YYYY" ex. **"April 2 1998"** (calculating days left to birthday and years old).
 
 Friend object structure for components:
 (All additional data from functions in ./src/hooks/GetAdditionalInfo)
 
+```
 Friend
     -id: int
     -fName: string
@@ -38,6 +39,7 @@ Friend
     getTurningYearsOld( date )
     getDaysToBday( date )
     getImgSrc( fName, lName )
+```
 
 ## Instalation and Setup
 
