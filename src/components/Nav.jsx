@@ -12,7 +12,7 @@ function Nav() {
                 "block w-1/2 lg:w-1/4 py-7 bg-blue-800 text-center mr-2 hover:bg-blue-500"
                 }
                 
-                to="/">
+                to="/birthday-reminders">
                     Upcoming Birthdays
                 </NavLink>
 
@@ -20,7 +20,7 @@ function Nav() {
                 className={({ isActive }) => (isActive ? "bg-blue-500 text-black" : "") + 
                 "block w-1/2 lg:w-1/4 py-7 bg-blue-800 text-center hover:bg-blue-500"
                 }
-                to="/all-birthdays">
+                to="/birthday-reminders/all-birthdays">
                     All Birthdays
                 </NavLink>
                 

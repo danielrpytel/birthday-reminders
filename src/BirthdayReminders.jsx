@@ -21,8 +21,8 @@ function BirthdayReminders() {
           <Routes>
             <Route path="*" element={<NotFound />} />
             <Route path="/birthday-reminders" element={ <UpcomingBirthdays /> }/>
-            <Route path="/friend-info/:id" element={ <FriendCard /> }/>
-            <Route path="/all-birthdays" element={ <AllBirthdaysList /> } />
+            <Route path="/birthday-reminders/friend-info/:id" element={ <FriendCard /> }/>
+            <Route path="/birthday-reminders/all-birthdays" element={ <AllBirthdaysList /> } />
           </Routes> 
         <Footer />
     </div>
