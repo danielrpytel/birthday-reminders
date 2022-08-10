@@ -2,8 +2,8 @@
 function Footer() {
 
     return (
-        <div className="w-100 pb-4">
-            <div className="flex flex-col mt-5 text-white text-xs">
+        <footer className="w-full mt-auto">
+            <div className="flex flex-col text-white text-xs my-4">
                 <div className="mx-auto mb-2">
                     Designed and Developed by Daniel Pytel
                 </div>
@@ -11,7 +11,7 @@ function Footer() {
                     Documentation and code on: <a className="hover:text-blue-500" href="https://github.com/danielrpytel/birthday-reminders">GitHub</a>
                 </div>
             </div>
-        </div>        
+        </footer>        
     )
 }
 

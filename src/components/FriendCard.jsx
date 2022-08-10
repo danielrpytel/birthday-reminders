@@ -1,10 +1,13 @@
 import { useParams } from "react-router-dom";
-import HeaderTitle from "./HeaderTitle";
 import GetFriendData from "../hooks/GetFriendData";
+import { useNavigate } from "react-router-dom";
+
+import { FaArrowLeft } from "react-icons/fa";
 
 
 function FriendCard() {
 
+    const navigate = useNavigate();
     let URLparams = useParams();
 
     // friend data matching params from json
@@ -19,7 +22,17 @@ function FriendCard() {
     if( friend === undefined ) {  
         return(
             <div className="flex flex-col w-full lg:w-3/5 md:rounded-lg mx-auto bg-gradient-to-tr from-purple-800 to-blue-800">
-                <HeaderTitle title="Friend's Birthday Info" />       
+
+                <div className="flex flex-row mx-auto">
+                    <button onClick={() => navigate(-1)}>
+                        <FaArrowLeft className="my-auto mr-6 w-7 h-7 text-white hover:text-blue-500" />
+                    </button>
+                    
+                    <h2 className="py-5 font-bold text-2xl text-white">
+                        Friend's Birthday Info
+                    </h2>
+                </div>
+
                 <div className="w-full h-[500px] md:w-4/5 mx-auto mt-9 text-center">
                     <h1 
                     aria-label="not found"
@@ -47,7 +60,14 @@ function FriendCard() {
 
     return(
         <div className="flex flex-col w-full lg:w-3/5 md:rounded-lg mx-auto bg-gradient-to-tr from-purple-800 to-blue-800">
-            <HeaderTitle title="Friend's Birthday Info" />       
+                <div className="flex flex-row mx-auto">
+                    <button onClick={() => navigate(-1)}>
+                        <FaArrowLeft className="my-auto mr-6 w-7 h-7 text-white hover:text-blue-500" />
+                    </button>
+                    <h2 className="py-5 font-bold text-2xl text-white">
+                        Friend's Birthday Info
+                    </h2>
+                </div>  
             <div className="w-full md:w-4/5 drop-shadow-md bg-blue-800 mx-auto mb-5"> 
                 <div className="flex flex-col xl:flex-row w-full">
 

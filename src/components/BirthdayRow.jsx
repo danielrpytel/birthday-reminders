@@ -8,7 +8,7 @@ function BirthdayRow( {firstName, lastName, dateOfBirth, daysToBday, turningYear
         
         <div className="flex w-full h-32 md:w-3/5 md:rounded-md bg-blue-800 m-auto mb-2 drop-shadow-md"
         aria-label="friend row info">
-            <Link className="flex w-full" to={`/birthday-reminders/friend-info/${id}`} >
+            <Link className="flex w-full" to={`/friend-info/${id}`} >
 
             {/* 
                 Image block. Getting src path from friend object (/hooks/GetAdditionalInfo getImgSrc())

@@ -25,7 +25,7 @@ function UpcomingBirthdays() {
                 onOptionChange={setFilterDays}
                 current={filterDaysToBirthday}
                 />
-                <div className="mx-auto mt-20">
+                <div className="text-center w-full mt-5">
                     <p className="text-white text-4xl">
                         No upcoming birthdays!
                     </p>

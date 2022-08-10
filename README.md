@@ -4,7 +4,7 @@ An application to remind the user of his friend's birthdays. Built with React, J
 
 [Demo the project](https://danielrpytel.github.io/birthday-reminders)
 
-## Data format
+## Data structure
 
 Friend's data is stored in ./src/data/friends.json and images of friends are in ./public/people-img.
 All images must be in following format: Firstname-Lastname.jpg ex. **Daniel-Pytel.jpg**. If the image is not found its replaced with img-placeholder.png.

@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 function BirthdayReminders() {
 
   return (
-    <div className="bg-gray-900 font-mono h-screen">
+    <div className="flex flex-col bg-gray-900 font-mono min-h-screen">
           <div className="py-5">
             <h1 className="text-center font-bold text-3xl text-white">
                 Birthdays Reminder
@@ -20,9 +20,9 @@ function BirthdayReminders() {
         <Nav />
           <Routes>
             <Route path="*" element={<NotFound />} />
-            <Route path="/birthday-reminders" element={ <UpcomingBirthdays /> }/>
-            <Route path="/birthday-reminders/friend-info/:id" element={ <FriendCard /> }/>
-            <Route path="/birthday-reminders/all-birthdays" element={ <AllBirthdaysList /> } />
+            <Route exact path="" element={ <UpcomingBirthdays /> }/>
+            <Route path="/friend-info/:id" element={ <FriendCard /> }/>
+            <Route path="/all-birthdays" element={ <AllBirthdaysList /> } />
           </Routes> 
         <Footer />
     </div>
