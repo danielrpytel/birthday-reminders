@@ -40,6 +40,9 @@ Friend
     getDaysToBday( date )
     getImgSrc( fName, lName )
 ```
+## Testing
+
+All tests in src/BirthdayReminders.test.js
 
 ## Instalation and Setup
 

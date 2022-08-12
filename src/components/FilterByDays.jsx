@@ -2,7 +2,7 @@
 function FilterByDays({filterDaysOptions, onOptionChange, current}) {
 
     return(
-    <div className="flex row mx-auto mt-8">
+    <div className="flex row mx-auto mt-4 mb-4">
         <p className="text-md text-white pr-4">
             Filter by
         </p>
