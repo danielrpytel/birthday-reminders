@@ -9,7 +9,7 @@ function UpcomingBirthdays() {
 	const [filterDaysToBirthday, setFilterDays] = useState(60);
 	const filterDaysToBirthdayOptions = [30, 45, 60, 90, 120];
 
-	const [birthdaysData, setBirthdaysData] = useState([]);
+	const [birthdaysData, setBirthdaysData] = useState([{}]);
 
 	const fetchData = async () => {
 		try {
@@ -46,7 +46,7 @@ function UpcomingBirthdays() {
 					{/* Display all upcoming birthdays in BirthdayRow component */}
 					{birthdaysData.map((friend) => (
 						<BirthdayRow
-							key={friend.id}
+							key={friend.fName + friend.lName + friend.id}
 							id={friend.id}
 							firstName={friend.fName}
 							lastName={friend.lName}

@@ -1,204 +1,212 @@
 {
-    "friends": [
-        {
-            "id": 0,
-            "fName": "Matt",
-            "lName": "Szaradzinski",
-            "dateOfBirth": "September 26 1998",
-            "favDrinks": ["Corona", "Vodka Redbull"],
-            "favActivity": ["Golf", "Volleyball", "Bars"]
-        },
-        {
-            "id": 1,
-            "fName": "Mike",
-            "lName": "Szuba",
-            "dateOfBirth": "October 31 1999",
-            "favDrinks": ["Orange Juice"],
-            "favActivity": ["Football", "Sports"]
-        },
-        {
-            "id": 2,
-            "fName": "Daniel",
-            "lName": "Szuba",
-            "dateOfBirth": "September 28 2000",
-            "favDrinks": ["Moscow Mule", "Jack and coke"],
-            "favActivity": ["Netflix", "Hike", "Sports"]
-        },
-        {
-            "id": 3,
-            "fName": "Bart",
-            "lName": "Szuba",
-            "dateOfBirth": "February 23 1997",
-            "favDrinks": ["Crown with sprite", "Bang"],
-            "favActivity": ["Basketball"]
-        },
-        {
-            "id": 4,
-            "fName": "Mike",
-            "lName": "Ganczar",
-            "dateOfBirth": "July 20 1999",
-            "favDrinks": ["Whiskey"],
-            "favActivity": ["Outdoors", "Sports"]
-        },
-        {
-            "id": 5,
-            "fName": "Bart",
-            "lName": "Kmin",
-            "dateOfBirth": "May 29 1999",
-            "favDrinks": ["Ice Tea", "Beer"],
-            "favActivity": ["Snowboard", "Soccer", "Chess"]
-        },
-        {
-            "id": 6,
-            "fName": "Wojtek",
-            "lName": "Siuty",
-            "dateOfBirth": "",
-            "favDrinks": [""],
-            "favActivity": [""]
-        },
-        {
-            "id": 7,
-            "fName": "Gabino",
-            "lName": "Garcia",
-            "dateOfBirth": "March 10 1999",
-            "favDrinks": ["Red Bull", "Modelo"],
-            "favActivity": ["Work Out", "Video Games"]
-        },
-        {
-            "id": 8,
-            "fName": "Danny",
-            "lName": "Barraza",
-            "dateOfBirth": "July 2 1999",
-            "favDrinks": ["Dr. Pepper"],
-            "favActivity": ["Make Music"]
-        },
-        {
-            "id": 9,
-            "fName": "Fabian",
-            "lName": "Chavez",
-            "dateOfBirth": "",
-            "favDrinks": [""],
-            "favActivity": [""]
-        },
-        {
-            "id": 10,
-            "fName": "Joe",
-            "lName": "Vrabel",
-            "dateOfBirth": "May 8 1998",
-            "favDrinks": ["Root Beer"],
-            "favActivity": ["Playing Xbox"]
-        },
-        {
-            "id": 11,
-            "fName": "Marcus",
-            "lName": "Becker",
-            "dateOfBirth": "December 18 1998",
-            "favDrinks": ["Whiskey and coke"],
-            "favActivity": ["Hang out with friends"]
-        },
-        {
-            "id": 12,
-            "fName": "Chad",
-            "lName": "Longfield",
-            "dateOfBirth": "June 19 1999",
-            "favDrinks": ["Gatorade"],
-            "favActivity": ["Going out with friends"]
-        },
-        {
-            "id": 13,
-            "fName": "Maggie",
-            "lName": "Ludzia",
-            "dateOfBirth": "June 26 2000",
-            "favDrinks": ["Pepsi", "Jack and coke"],
-            "favActivity": ["Concerts", "Festivals"]
-        },
-        {
-            "id": 14,
-            "fName": "Cayla",
-            "lName": "Kenney",
-            "dateOfBirth": "June 16 2000",
-            "favDrinks": ["Twisted Tea", "Coffee"],
-            "favActivity": ["Hiking", "Listen to music"]
-        },
-        {
-            "id": 15,
-            "fName": "Seth",
-            "lName": "Gutknecht",
-            "dateOfBirth": "February 6 2000",
-            "favDrinks": ["Root Beer", "Budweiser"],
-            "favActivity": ["Listen to music"]
-        },
-        {
-            "id": 16,
-            "fName": "Edgar",
-            "lName": "Rosales",
-            "dateOfBirth": "June 30 2001",
-            "favDrinks": ["Smirnoff Raspbery Lemonade", "Jumex Strawberry Banana"],
-            "favActivity": ["Video Games", "Sports", "Listen to music"]
-        },
-        {
-            "id": 17,
-            "fName": "Chris",
-            "lName": "Szuba",
-            "dateOfBirth": "April 11 1999",
-            "favDrinks": ["Coffe", "Water"],
-            "favActivity": ["Hang out with friends", "Golf"]
-        },
-        {
-            "id": 18,
-            "fName": "John",
-            "lName": "Oldman",
-            "dateOfBirth": "January 30 2000",
-            "favDrinks": ["Bud Light (210)"],
-            "favActivity": ["Drinking with the boys"]
-        },
-        {
-            "id": 19,
-            "fName": "Radek",
-            "lName": "Bryja",
-            "dateOfBirth": "February 20 1999",
-            "favDrinks": ["Horchata"],
-            "favActivity": ["Work Out"]
-        },
-        {
-            "id": 20,
-            "fName": "Alicia",
-            "lName": "Nowak",
-            "dateOfBirth": "August 8 2002",
-            "favDrinks": ["Peach Ice Tea"],
-            "favActivity": ["Going to the beach"]
-        },
-        {
-            "id": 21,
-            "fName": "Elisa",
-            "lName": "Ortega",
-            "dateOfBirth": "December 11 1998",
-            "favDrinks": ["Coffee"],
-            "favActivity": ["Paint", "Hang out with friends"]
-        },
-        {
-            "id": 22,
-            "fName": "Mike",
-            "lName": "Zurek",
-            "dateOfBirth": "September 24 1999",
-            "favDrinks": ["Dalmore Whiskey on the rocks"],
-            "favActivity": ["play video games"]
-        },
-        {
-            "id": 23,
-            "fName": "Michaela",
-            "lName": "Uden",
-            "dateOfBirth": "December 20 1998",
-            "favDrinks": ["Strawberry Daiquiri"],
-            "favActivity": ["Spend time with dogs"]
-        },
-        {
-            "id": 24,
-            "fName": "Daniel",
-            "lName": "Pytel",
-            "dateOfBirth": "April 2 1998",
-            "favDrinks": ["Monster", "Beer"],
-            "favActivity": ["Sports", "Coding", "Hang out with friends"]
-        }
-    ]
+	"friends": [
+		{
+			"id": 0,
+			"fName": "Matt",
+			"lName": "Szaradzinski",
+			"dateOfBirth": "September 26 1998",
+			"favDrinks": ["Corona", "Vodka Redbull"],
+			"favActivity": ["Golf", "Volleyball", "Bars"]
+		},
+		{
+			"id": 1,
+			"fName": "Mike",
+			"lName": "Szuba",
+			"dateOfBirth": "October 31 1999",
+			"favDrinks": ["Orange Juice"],
+			"favActivity": ["Football", "Sports"]
+		},
+		{
+			"id": 2,
+			"fName": "Daniel",
+			"lName": "Szuba",
+			"dateOfBirth": "September 28 2000",
+			"favDrinks": ["Moscow Mule", "Jack and coke"],
+			"favActivity": ["Netflix", "Hike", "Sports"]
+		},
+		{
+			"id": 3,
+			"fName": "Bart",
+			"lName": "Szuba",
+			"dateOfBirth": "February 23 1997",
+			"favDrinks": ["Crown with sprite", "Bang"],
+			"favActivity": ["Basketball"]
+		},
+		{
+			"id": 4,
+			"fName": "Mike",
+			"lName": "Ganczar",
+			"dateOfBirth": "July 20 1999",
+			"favDrinks": ["Whiskey"],
+			"favActivity": ["Outdoors", "Sports"]
+		},
+		{
+			"id": 5,
+			"fName": "Bart",
+			"lName": "Kmin",
+			"dateOfBirth": "May 29 1999",
+			"favDrinks": ["Ice Tea", "Beer"],
+			"favActivity": ["Snowboard", "Soccer", "Chess"]
+		},
+		{
+			"id": 6,
+			"fName": "Wojtek",
+			"lName": "Siuty",
+			"dateOfBirth": "",
+			"favDrinks": [""],
+			"favActivity": [""]
+		},
+		{
+			"id": 7,
+			"fName": "Gabino",
+			"lName": "Garcia",
+			"dateOfBirth": "March 10 1999",
+			"favDrinks": ["Red Bull", "Modelo"],
+			"favActivity": ["Work Out", "Video Games"]
+		},
+		{
+			"id": 8,
+			"fName": "Danny",
+			"lName": "Barraza",
+			"dateOfBirth": "July 2 1999",
+			"favDrinks": ["Dr. Pepper"],
+			"favActivity": ["Make Music"]
+		},
+		{
+			"id": 9,
+			"fName": "Fabian",
+			"lName": "Chavez",
+			"dateOfBirth": "",
+			"favDrinks": [""],
+			"favActivity": [""]
+		},
+		{
+			"id": 10,
+			"fName": "Joe",
+			"lName": "Vrabel",
+			"dateOfBirth": "May 8 1998",
+			"favDrinks": ["Root Beer"],
+			"favActivity": ["Playing Xbox"]
+		},
+		{
+			"id": 11,
+			"fName": "Marcus",
+			"lName": "Becker",
+			"dateOfBirth": "December 18 1998",
+			"favDrinks": ["Whiskey and coke"],
+			"favActivity": ["Hang out with friends"]
+		},
+		{
+			"id": 12,
+			"fName": "Chad",
+			"lName": "Longfield",
+			"dateOfBirth": "June 19 1999",
+			"favDrinks": ["Gatorade"],
+			"favActivity": ["Going out with friends"]
+		},
+		{
+			"id": 13,
+			"fName": "Maggie",
+			"lName": "Ludzia",
+			"dateOfBirth": "June 26 2000",
+			"favDrinks": ["Pepsi", "Jack and coke"],
+			"favActivity": ["Concerts", "Festivals"]
+		},
+		{
+			"id": 14,
+			"fName": "Cayla",
+			"lName": "Kenney",
+			"dateOfBirth": "June 16 2000",
+			"favDrinks": ["Twisted Tea", "Coffee"],
+			"favActivity": ["Hiking", "Listen to music"]
+		},
+		{
+			"id": 15,
+			"fName": "Seth",
+			"lName": "Gutknecht",
+			"dateOfBirth": "February 6 2000",
+			"favDrinks": ["Root Beer", "Budweiser"],
+			"favActivity": ["Listen to music"]
+		},
+		{
+			"id": 16,
+			"fName": "Edgar",
+			"lName": "Rosales",
+			"dateOfBirth": "June 30 2001",
+			"favDrinks": ["Smirnoff Raspbery Lemonade", "Jumex Strawberry Banana"],
+			"favActivity": ["Video Games", "Sports", "Listen to music"]
+		},
+		{
+			"id": 17,
+			"fName": "Chris",
+			"lName": "Szuba",
+			"dateOfBirth": "April 11 1999",
+			"favDrinks": ["Coffe", "Water"],
+			"favActivity": ["Hang out with friends", "Golf"]
+		},
+		{
+			"id": 18,
+			"fName": "John",
+			"lName": "Oldman",
+			"dateOfBirth": "January 30 2000",
+			"favDrinks": ["Bud Light (210)"],
+			"favActivity": ["Drinking with the boys"]
+		},
+		{
+			"id": 19,
+			"fName": "Radek",
+			"lName": "Bryja",
+			"dateOfBirth": "February 20 1999",
+			"favDrinks": ["Horchata"],
+			"favActivity": ["Work Out"]
+		},
+		{
+			"id": 20,
+			"fName": "Alicia",
+			"lName": "Nowak",
+			"dateOfBirth": "August 8 2002",
+			"favDrinks": ["Peach Ice Tea"],
+			"favActivity": ["Going to the beach"]
+		},
+		{
+			"id": 21,
+			"fName": "Elisa",
+			"lName": "Ortega",
+			"dateOfBirth": "December 11 1998",
+			"favDrinks": ["Coffee"],
+			"favActivity": ["Paint", "Hang out with friends"]
+		},
+		{
+			"id": 22,
+			"fName": "Mike",
+			"lName": "Zurek",
+			"dateOfBirth": "September 24 1999",
+			"favDrinks": ["Dalmore Whiskey on the rocks"],
+			"favActivity": ["play video games"]
+		},
+		{
+			"id": 23,
+			"fName": "Michaela",
+			"lName": "Uden",
+			"dateOfBirth": "December 20 1998",
+			"favDrinks": ["Strawberry Daiquiri"],
+			"favActivity": ["Spend time with dogs"]
+		},
+		{
+			"id": 24,
+			"fName": "Daniel",
+			"lName": "Pytel",
+			"dateOfBirth": "April 2 1998",
+			"favDrinks": ["Monster", "Beer"],
+			"favActivity": ["Sports", "Coding", "Hang out with friends"]
+		},
+		{
+			"id": 25,
+			"fName": "testing",
+			"lName": "testing1",
+			"dateOfBirth": "May 30 1998",
+			"favDrinks": ["Monster", "Beer"],
+			"favActivity": ["Sports", "Coding", "Hang out with friends"]
+		}
+	]
 }

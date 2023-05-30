@@ -5,7 +5,7 @@ import GetFriendData from "../hooks/GetFriendData";
 import { FaArrowLeft } from "react-icons/fa";
 
 function FriendCard() {
-	const [friendData, setFriendData] = useState([]);
+	const [friendData, setFriendData] = useState({});
 	const urlParams = useParams();
 	const navigate = useNavigate();
 

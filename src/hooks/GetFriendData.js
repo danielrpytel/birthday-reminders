@@ -3,6 +3,7 @@ import {
 	getTurningYearsOld,
 	getDaysToBday,
 	getImgSrc,
+	checkBday,
 } from "./GetAdditionalInfo";
 
 function GetFriendData(urlParams) {
@@ -38,8 +39,9 @@ function GetFriendData(urlParams) {
 		daysToBday: getDaysToBday(friend.dateOfBirth),
 		turningYearsOld: getTurningYearsOld(friend.dateOfBirth),
 		imgSrc: getImgSrc(friend.fName, friend.lName),
+		todayBday: checkBday(friend.dateOfBirth),
 	};
-
+	console.log("FriendData", friendData);
 	// Returns single object
 	return friendData;
 }

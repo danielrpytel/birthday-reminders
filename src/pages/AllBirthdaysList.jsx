@@ -4,7 +4,7 @@ import HeaderTitle from "../components/HeaderTitle";
 import BirthdayRow from "../components/BirthdayRow";
 
 function AllBirthdays() {
-	const [allBirthdaysData, setAllBirthdaysData] = useState([]);
+	const [allBirthdaysData, setAllBirthdaysData] = useState([{}]);
 
 	const fetchData = async () => {
 		try {
@@ -26,7 +26,7 @@ function AllBirthdays() {
 				{/* Display all birthdays in BirthdayRow component */}
 				{allBirthdaysData.map((friend) => (
 					<BirthdayRow
-						key={friend.id}
+						key={friend.fName + friend.lName + friend.id}
 						id={friend.id}
 						firstName={friend.fName}
 						lastName={friend.lName}

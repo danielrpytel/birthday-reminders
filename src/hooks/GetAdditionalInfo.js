@@ -1,6 +1,7 @@
 import moment from "moment";
 
 const momentFormat = "MMMM D YYYY";
+const checkBdayFormat = "M D";
 
 // Get turning years old from DOB date
 export function getTurningYearsOld(date) {
@@ -47,4 +48,11 @@ export function getImgSrc(fName, lName) {
 	const imgSrc = process.env.PUBLIC_URL + `${directory}${imgName}${fileType}`;
 
 	return imgSrc;
+}
+
+export function checkBday(bDay) {
+	const currentDate = moment().format(checkBdayFormat);
+	const birthDay = moment(bDay, momentFormat).format(checkBdayFormat);
+
+	return currentDate === birthDay;
 }
