@@ -28,6 +28,17 @@ function GetFriendData(urlParams) {
 		return string;
 	};
 
+	let daysToBday;
+	let turningYearsOld = getTurningYearsOld(friend.dateOfBirth);
+	const checkForBday = checkBday(friend.dateOfBirth);
+
+	if (checkForBday) {
+		daysToBday = 0;
+		turningYearsOld--;
+	} else {
+		daysToBday = getDaysToBday(friend.dateOfBirth);
+	}
+
 	// New object with additional information (functions in ./GetAdditionalInfo file)
 	const friendData = {
 		id: friend.id,
@@ -36,10 +47,10 @@ function GetFriendData(urlParams) {
 		dateOfBirth: friend.dateOfBirth,
 		favDrinks: getFavString(friend.favDrinks),
 		favActivity: getFavString(friend.favActivity),
-		daysToBday: getDaysToBday(friend.dateOfBirth),
-		turningYearsOld: getTurningYearsOld(friend.dateOfBirth),
+		daysToBday: daysToBday,
+		turningYearsOld: turningYearsOld,
 		imgSrc: getImgSrc(friend.fName, friend.lName),
-		todayBday: checkBday(friend.dateOfBirth),
+		todayBday: checkForBday,
 	};
 	console.log("FriendData", friendData);
 	// Returns single object
