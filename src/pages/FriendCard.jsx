@@ -72,10 +72,16 @@ function FriendCard() {
 								<h2 className="text-white text-md">{friendData.dateOfBirth}</h2>
 							</div>
 							<div className="mb-3 text-center xl:text-left">
-								<p className="text-white text-md">
-									Turning {friendData.turningYearsOld} in{" "}
-									{friendData.daysToBday} days
-								</p>
+								{friendData.todayBday === false ? (
+									<p className="text-white text-md">
+										Turning {friendData.turningYearsOld} years in{" "}
+										{friendData.daysToBday} days
+									</p>
+								) : (
+									<p className="text-white text-md">
+										Turned {friendData.turningYearsOld} years today!
+									</p>
+								)}
 							</div>
 						</div>
 

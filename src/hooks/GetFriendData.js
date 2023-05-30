@@ -52,7 +52,7 @@ function GetFriendData(urlParams) {
 		imgSrc: getImgSrc(friend.fName, friend.lName),
 		todayBday: checkForBday,
 	};
-	console.log("FriendData", friendData);
+
 	// Returns single object
 	return friendData;
 }

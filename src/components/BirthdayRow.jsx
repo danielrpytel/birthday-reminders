@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
 
 function BirthdayRow({
+	id,
 	firstName,
 	lastName,
 	dateOfBirth,
 	daysToBday,
 	turningYearsOld,
-	id,
 	imgSrc,
+	todayBday,
 }) {
 	const placeHolderSrc =
 		process.env.PUBLIC_URL + "/people-img/img-placeholder.png";
@@ -50,7 +51,13 @@ function BirthdayRow({
 				{/* days to bday string block */}
 				<div className="w-2/5 m-auto px-3">
 					<div className="text-white text-base" aria-label="days to bday">
-						Turning {turningYearsOld} in {daysToBday} days
+						{todayBday === false ? (
+							<div>
+								Turning {turningYearsOld} years in {daysToBday} days
+							</div>
+						) : (
+							<div>Turned {turningYearsOld} years today!</div>
+						)}
 					</div>
 				</div>
 			</Link>

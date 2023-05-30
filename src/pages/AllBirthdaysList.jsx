@@ -34,6 +34,7 @@ function AllBirthdays() {
 						daysToBday={friend.daysToBday}
 						turningYearsOld={friend.turningYearsOld}
 						imgSrc={friend.imgSrc}
+						todayBday={friend.todayBday}
 					/>
 				))}
 			</div>
