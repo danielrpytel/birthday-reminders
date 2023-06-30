@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function BirthdayRow({
+function FriendRow({
 	id,
 	firstName,
 	lastName,
@@ -53,7 +53,16 @@ function BirthdayRow({
 					<div className="text-white text-base" aria-label="days to bday">
 						{todayBday === false ? (
 							<div>
-								Turning {turningYearsOld} years in {daysToBday} days
+								{daysToBday[1] === "hours" && daysToBday[0] <= 0 ? (
+									<div>
+										Turning {turningYearsOld} years in less than an hour!
+									</div>
+								) : (
+									<div>
+										Turning {turningYearsOld} years in {daysToBday[0]}{" "}
+										{daysToBday[1]}.
+									</div>
+								)}
 							</div>
 						) : (
 							<div>Turned {turningYearsOld} years today!</div>
@@ -65,4 +74,4 @@ function BirthdayRow({
 	);
 }
 
-export default BirthdayRow;
+export default FriendRow;

@@ -75,7 +75,7 @@ function FriendCard() {
 								{friendData.todayBday === false ? (
 									<p className="text-white text-md">
 										Turning {friendData.turningYearsOld} years in{" "}
-										{friendData.daysToBday} days
+										{friendData.daysToBday[0]} {friendData.daysToBday[1]}.
 									</p>
 								) : (
 									<p className="text-white text-md">

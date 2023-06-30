@@ -68,7 +68,7 @@
 			"id": 8,
 			"fName": "Danny",
 			"lName": "Barraza",
-			"dateOfBirth": "July 2 1999",
+			"dateOfBirth": "July 1 1999",
 			"favDrinks": ["Dr. Pepper"],
 			"favActivity": ["Make Music"]
 		},
@@ -204,7 +204,7 @@
 			"id": 25,
 			"fName": "testing",
 			"lName": "testing1",
-			"dateOfBirth": "May 30 1998",
+			"dateOfBirth": "June 4 1998",
 			"favDrinks": ["Monster", "Beer"],
 			"favActivity": ["Sports", "Coding", "Hang out with friends"]
 		}

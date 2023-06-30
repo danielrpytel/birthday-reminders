@@ -14,7 +14,7 @@ function GetFriendsData() {
 		const checkForBday = checkBday(friend.dateOfBirth);
 
 		if (checkForBday) {
-			daysToBday = 0;
+			daysToBday = [0, "days"];
 			turningYearsOld--;
 		} else {
 			daysToBday = getDaysToBday(friend.dateOfBirth);
@@ -41,10 +41,28 @@ function GetFriendsData() {
 	});
 
 	// Sorting objects in ascending order of days to birthday value
-	const sortedList = noEmptydateOfBirthProp.sort(
-		(a, b) => a.daysToBday - b.daysToBday
-	);
+	const sortedList = noEmptydateOfBirthProp.sort((a, b) => {
+		if (a.daysToBday[0] === 0 && b.daysToBday[0] !== 0) {
+			return -1; // 'a' is today's birthday, so it should come before 'b'
+		} else if (b.daysToBday[0] === 0 && a.daysToBday[0] !== 0) {
+			return 1; // 'b' is today's birthday, so it should come before 'a'
+		} else if (a.daysToBday[0] === 0 && b.daysToBday[0] === 0) {
+			if (a.daysToBday[1] === "hours" && b.daysToBday[1] !== "hours") {
+				return -1; // 'a' is hours, so it should come before 'b'
+			} else if (a.daysToBday[1] !== "hours" && b.daysToBday[1] === "hours") {
+				return 1; // 'b' is hours, so it should come before 'a'
+			}
+		} else if (a.daysToBday[1] === "hours" && b.daysToBday[1] !== "hours") {
+			return -1; // 'a' is hours, so it should come before 'b'
+		} else if (a.daysToBday[1] !== "hours" && b.daysToBday[1] === "hours") {
+			return 1; // 'b' is hours, so it should come before 'a'
+		}
 
+		// Both 'a' and 'b' are either today's birthday, hours, or days,
+		// so sort based on the numerical value
+		return a.daysToBday[0] - b.daysToBday[0];
+	});
+	console.log(sortedList);
 	return sortedList;
 }
 

@@ -33,10 +33,16 @@ export function getDaysToBday(date) {
 	// Adding turning years old to have only days to next birthday
 	bDay.add(yearDifference, "years");
 
-	const dayDifference = currentDate.diff(bDay, "days");
+	const dayDifference = Math.abs(currentDate.diff(bDay, "days"));
+	// Hours difference;
+	const hours = moment.duration(bDay.diff(currentDate));
+	const hoursDifference = Math.floor(hours.asHours());
 
-	// moment.diff() returns negative difference, used math.abs for positive value
-	return Math.abs(dayDifference);
+	if (dayDifference === 0) {
+		return [hoursDifference + 1, "hours"];
+	}
+
+	return [dayDifference + 1, "days"];
 }
 
 // Creating src path to access friend's picture

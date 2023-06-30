@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import GetFriendsData from "../hooks/GetFriendsData";
 import HeaderTitle from "../components/HeaderTitle";
-import BirthdayRow from "../components/BirthdayRow";
+import FriendRow from "../components/FriendRow";
 
 function AllBirthdays() {
 	const [allBirthdaysData, setAllBirthdaysData] = useState([{}]);
@@ -25,7 +25,7 @@ function AllBirthdays() {
 			<div className="flex-1 max-h-full overflow-auto mb-5">
 				{/* Display all birthdays in BirthdayRow component */}
 				{allBirthdaysData.map((friend) => (
-					<BirthdayRow
+					<FriendRow
 						key={friend.fName + friend.lName + friend.id}
 						id={friend.id}
 						firstName={friend.fName}

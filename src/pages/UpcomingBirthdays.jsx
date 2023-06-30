@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import GetFriendsData from "../hooks/GetFriendsData";
-import BirthdayRow from "../components/BirthdayRow";
+import FriendRow from "../components/FriendRow";
 import HeaderTitle from "../components/HeaderTitle";
 import FilterByDays from "../components/FilterByDays";
 
@@ -15,7 +15,7 @@ function UpcomingBirthdays() {
 		try {
 			let data = await GetFriendsData();
 			let filteredData = data.filter((friend) => {
-				return friend.daysToBday <= filterDaysToBirthday;
+				return friend.daysToBday[0] <= filterDaysToBirthday;
 			});
 			setBirthdaysData(filteredData);
 		} catch (error) {
@@ -45,7 +45,7 @@ function UpcomingBirthdays() {
 				<div className="flex-1 max-h-full overflow-auto mb-5">
 					{/* Display all upcoming birthdays in BirthdayRow component */}
 					{birthdaysData.map((friend) => (
-						<BirthdayRow
+						<FriendRow
 							key={friend.fName + friend.lName + friend.id}
 							id={friend.id}
 							firstName={friend.fName}
